@@ -1,0 +1,17 @@
+<div>
+ 
+<button type="button" id = "btnShowList" class="btn btn-primary" (click) = "backtoList()" style="float:right; margin-top: 10px; background-color: #808080;border-color:#808080">
+    back</button>
+    <button type="button" id = "btnAddItemToList" class="btn btn-primary" (click) = "showAddEditDialog()" style="margin-top: 10px;background-color: #808080;border-color:#808080">
+    Add New Product</button>
+
+</div>
+    <div *ngIf="showListFlag==true">
+    <app-product></app-product>
+</div>
+
+<div *ngIf="showAddEditFlag==true">
+    <app-modifyforms></app-modifyforms>
+</div>
+
+
